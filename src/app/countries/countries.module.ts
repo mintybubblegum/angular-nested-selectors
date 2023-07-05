@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CountriesRoutingModule } from './countries-routing.module';
 import { SelectorPageComponent } from './pages/selector-page/selector-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SelectorPageComponent } from './pages/selector-page/selector-page.compo
   ],
   imports: [
     CommonModule,
-    CountriesRoutingModule
+    CountriesRoutingModule,
+    ReactiveFormsModule, //módulo necesario para trabajar con formularios reactivos en todo nuestro countries.module.ts
   ]
 })
 export class CountriesModule { }
